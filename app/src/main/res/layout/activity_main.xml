@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Ввод системы счисления -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Конечная система счислений:"
+            android:textSize="16sp"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/fromBaseEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="10"
+            android:ems="4"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Изначальная система счислений:"
+            android:textSize="16sp"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/toBaseEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="2"
+            android:ems="4"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <!-- Поле для отображения результата -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        android:gravity="end"
+        android:padding="8dp"
+        android:background="#f0f0f0"/>
+
+    <!-- Кнопки -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:layout_marginTop="16dp">
+
+        <!-- AC -->
+        <ImageButton
+            android:id="@+id/buttonAC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/sprite_2_1"
+            android:contentDescription="Button AC"/>
+
+        <!-- % -->
+        <ImageButton
+            android:id="@+id/buttonPercent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/sprite_2_2"
+            android:contentDescription="Button Percent"/>
+
+        <!-- Пустое место -->
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"/>
+
+        <!-- / -->
+        <ImageButton
+            android:id="@+id/buttonDivide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/sprite_1_3"
+            android:contentDescription="Button Divide"/>
+
+        <!-- 1 -->
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/sprite1"
+            android:contentDescription="Button 1"/>
+
+        <!-- 2 -->
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/sprite2"
+            android:contentDescription="Button 2"/>
+
+        <!-- 3 -->
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/sprite3"
+            android:contentDescription="Button 3"/>
+
+        <!-- * -->
+        <ImageButton
+            android:id="@+id/buttonMultiply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/sprite_1_4"
+            android:contentDescription="Button Multiply"/>
+
+        <!-- 4 -->
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/sprite4"
+            android:contentDescription="Button 4"/>
+
+        <!-- 5 -->
+        <ImageButton
+            android:id="@+id/button5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/sprite5"
+            android:contentDescription="Button 5"/>
+
+        <!-- 6 -->
+        <ImageButton
+            android:id="@+id/button6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/sprite6"
+            android:contentDescription="Button 6"/>
+
+        <!-- + -->
+        <ImageButton
+            android:id="@+id/buttonPlus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/sprite_1_2"
+            android:contentDescription="Button Plus"/>
+
+        <!-- 7 -->
+        <ImageButton
+            android:id="@+id/button7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/sprite7"
+            android:contentDescription="Button 7"/>
+
+        <!-- 8 -->
+        <ImageButton
+            android:id="@+id/button8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/sprite8"
+            android:contentDescription="Button 8"/>
+
+        <!-- 9 -->
+        <ImageButton
+            android:id="@+id/button9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/sprite9"
+            android:contentDescription="Button 9"/>
+
+        <!-- - -->
+        <ImageButton
+            android:id="@+id/buttonMinus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/sprite_1_1"
+            android:contentDescription="Button Minus"/>
+
+        <!-- 0 -->
+        <ImageButton
+            android:id="@+id/button0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/sprite0"
+            android:contentDescription="Button 0"/>
+
+        <!-- . (точка) -->
+        <ImageButton
+            android:id="@+id/buttonDot"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/sprite_dot"
+            android:contentDescription="Button Dot"/>
+
+        <!-- = -->
+        <ImageButton
+            android:id="@+id/buttonEquals"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="2"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/sprite_1_5"
+            android:contentDescription="Button Equals"/>
+    </GridLayout>
+</LinearLayout>
