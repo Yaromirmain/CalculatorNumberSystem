@@ -15,48 +15,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Конвертер систем счисления"
+            android:text="Обычный калькулятор"
             android:textColor="@color/text_primary"
             android:textSize="20sp"
             android:textStyle="bold"
             android:gravity="center"
             android:paddingBottom="16dp"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginBottom="16dp">
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/BaseInputLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Исходная система (2-36)">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/fromBaseEditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:text="10"/>
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/BaseInputLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:hint="Целевая система (2-36)">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/toBaseEditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:text="2"/>
-            </com.google.android.material.textfield.TextInputLayout>
-        </LinearLayout>
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
@@ -66,7 +30,7 @@
             app:cardCornerRadius="8dp">
 
             <TextView
-                android:id="@+id/resultTextView"
+                android:id="@+id/standardResultTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="0"
@@ -90,21 +54,24 @@
                 android:padding="4dp">
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_ac"
+                    android:id="@+id/btn_clear"
                     style="@style/CalculatorButton.Operation"
-                    android:text="AC"/>
+                    android:text="C"/>
 
-                <Space android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_columnWeight="1"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_plus_minus"
+                    style="@style/CalculatorButton.Operation"
+                    android:text="±"/>
 
-                <Space android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_columnWeight="1"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_percent"
+                    style="@style/CalculatorButton.Operation"
+                    android:text="%"/>
 
-                <Space android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_columnWeight="1"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_divide"
+                    style="@style/CalculatorButton.Operation"
+                    android:text="/"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_7"
@@ -122,6 +89,11 @@
                     android:text="9"/>
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_multiply"
+                    style="@style/CalculatorButton.Operation"
+                    android:text="×"/>
+
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_4"
                     style="@style/CalculatorButton.Number"
                     android:text="4"/>
@@ -135,6 +107,11 @@
                     android:id="@+id/btn_6"
                     style="@style/CalculatorButton.Number"
                     android:text="6"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_minus"
+                    style="@style/CalculatorButton.Operation"
+                    android:text="-"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_1"
@@ -152,6 +129,11 @@
                     android:text="3"/>
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_plus"
+                    style="@style/CalculatorButton.Operation"
+                    android:text="+"/>
+
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_0"
                     style="@style/CalculatorButton.Number"
                     android:layout_columnSpan="2"
@@ -165,7 +147,6 @@
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_equals"
                     style="@style/CalculatorButton.Equals"
-                    android:layout_rowSpan="2"
                     android:text="="/>
             </GridLayout>
         </com.google.android.material.card.MaterialCardView>
@@ -177,7 +158,7 @@
             android:layout_height="56dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
-            android:text="Перейти в обычный калькулятор"
+            android:text="Перейти в конвертер систем"
             android:textSize="18sp"
             android:textColor="@color/white"
             android:backgroundTint="@color/colorPrimary"
