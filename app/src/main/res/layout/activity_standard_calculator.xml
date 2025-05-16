@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Обычный калькулятор"
+            android:text="@string/title_standard_calculator"
             android:textColor="@color/text_primary"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -33,7 +33,7 @@
                 android:id="@+id/standardResultTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:text="@string/initial_result_value"
                 android:textColor="@color/text_primary"
                 android:textSize="24sp"
                 android:gravity="end"
@@ -50,116 +50,136 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:columnCount="4"
-                android:rowCount="5"
+                android:rowCount="6"
                 android:padding="4dp">
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_clear"
                     style="@style/CalculatorButton.Operation"
-                    android:text="C"/>
+                    android:text="@string/button_clear"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_plus_minus"
                     style="@style/CalculatorButton.Operation"
-                    android:text="±"/>
+                    android:text="@string/button_plus_minus"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_percent"
                     style="@style/CalculatorButton.Operation"
-                    android:text="%"/>
+                    android:text="@string/button_percent"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_divide"
                     style="@style/CalculatorButton.Operation"
-                    android:text="/"/>
+                    android:text="@string/button_divide"/>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_7"
-                    style="@style/CalculatorButton.Number"
-                    android:text="7"/>
+                    android:id="@+id/btn_open_bracket"
+                    style="@style/CalculatorButton.Operation"
+                    android:text="@string/button_open_bracket"/>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_8"
-                    style="@style/CalculatorButton.Number"
-                    android:text="8"/>
+                    android:id="@+id/btn_close_bracket"
+                    style="@style/CalculatorButton.Operation"
+                    android:text="@string/button_close_bracket"/>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_9"
-                    style="@style/CalculatorButton.Number"
-                    android:text="9"/>
+                    android:id="@+id/btn_power"
+                    style="@style/CalculatorButton.Operation"
+                    android:text="@string/button_power"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_multiply"
                     style="@style/CalculatorButton.Operation"
-                    android:text="×"/>
+                    android:text="@string/button_multiply"/>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_4"
+                    android:id="@+id/btn_7"
                     style="@style/CalculatorButton.Number"
-                    android:text="4"/>
+                    android:text="@string/button_7"/>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_5"
+                    android:id="@+id/btn_8"
                     style="@style/CalculatorButton.Number"
-                    android:text="5"/>
+                    android:text="@string/button_8"/>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_6"
+                    android:id="@+id/btn_9"
                     style="@style/CalculatorButton.Number"
-                    android:text="6"/>
+                    android:text="@string/button_9"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_minus"
                     style="@style/CalculatorButton.Operation"
-                    android:text="-"/>
+                    android:text="@string/button_minus"/>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_1"
+                    android:id="@+id/btn_4"
                     style="@style/CalculatorButton.Number"
-                    android:text="1"/>
+                    android:text="@string/button_4"/>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_2"
+                    android:id="@+id/btn_5"
                     style="@style/CalculatorButton.Number"
-                    android:text="2"/>
+                    android:text="@string/button_5"/>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_3"
+                    android:id="@+id/btn_6"
                     style="@style/CalculatorButton.Number"
-                    android:text="3"/>
+                    android:text="@string/button_6"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_plus"
                     style="@style/CalculatorButton.Operation"
-                    android:text="+"/>
+                    android:text="@string/button_plus"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_1"
+                    style="@style/CalculatorButton.Number"
+                    android:text="@string/button_1"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_2"
+                    style="@style/CalculatorButton.Number"
+                    android:text="@string/button_2"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_3"
+                    style="@style/CalculatorButton.Number"
+                    android:text="@string/button_3"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_backspace"
+                    style="@style/CalculatorButton.Operation"
+                    android:text="@string/button_backspace"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_0"
                     style="@style/CalculatorButton.Number"
                     android:layout_columnSpan="2"
-                    android:text="0"/>
+                    android:text="@string/button_0"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_dot"
                     style="@style/CalculatorButton.Number"
-                    android:text="."/>
+                    android:text="@string/button_dot"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_equals"
                     style="@style/CalculatorButton.Equals"
-                    android:text="="/>
+                    android:text="@string/button_equals"/>
             </GridLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Яркая кнопка переключения -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_switch"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
-            android:text="Перейти в конвертер систем"
-            android:textSize="18sp"
+            android:minHeight="56dp"
+            android:text="@string/action_switch_to_num_sys_converter"
+            android:textSize="16sp"
             android:textColor="@color/white"
             android:backgroundTint="@color/colorPrimary"
             app:cornerRadius="28dp"
