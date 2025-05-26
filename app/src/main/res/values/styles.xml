@@ -6,8 +6,7 @@
     </style>
 
     <style name="BaseInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-        <item name="boxStrokeColor">@color/colorPrimary</item>
-        <item name="hintTextColor">@color/text_secondary</item>
+        <item name="boxStrokeColor">@color/colorPrimary</item> <item name="hintTextColor">@color/text_secondary</item>
         <item name="boxCornerRadiusTopStart">8dp</item>
         <item name="boxCornerRadiusTopEnd">8dp</item>
         <item name="boxCornerRadiusBottomStart">8dp</item>
@@ -30,11 +29,15 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
-    <style name="CalculatorButton.Equals" parent="CalculatorButton.Number">
+    <style name="CalculatorButton.Equals" parent="CalculatorButton.Operation">
         <item name="backgroundTint">@color/button_equals</item>
-        <item name="android:textColor">@android:color/white</item>
     </style>
 
+    <style name="CalculatorButton.Clear" parent="CalculatorButton.Operation">
+        <item name="backgroundTint">@color/text_secondary</item>
+    </style>
 
+    <style name="CalculatorButton.Delete" parent="CalculatorButton.Operation">
+        <item name="backgroundTint">@color/text_secondary</item>
+    </style>
 </resources>
-

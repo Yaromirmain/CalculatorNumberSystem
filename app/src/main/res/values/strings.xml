@@ -1,51 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Calculator NumSys</string>
+    <string name="app_name">Калькулятор Систем Счисления</string>
 
-    <string name="title_num_sys_converter">Конвертер систем счисления</string>
-    <string name="hint_from_base">Исходная система (2-36)</string>
-    <string name="default_from_base">10</string>
-    <string name="hint_to_base">Целевая система (2-36)</string>
-    <string name="default_to_base">2</string>
     <string name="initial_result_value">0</string>
+    <string name="button_0">0</string>
+    <string name="button_1">1</string>
+    <string name="button_2">2</string>
+    <string name="button_3">3</string>
+    <string name="button_4">4</string>
+    <string name="button_5">5</string>
+    <string name="button_6">6</string>
+    <string name="button_7">7</string>
+    <string name="button_8">8</string>
+    <string name="button_9">9</string>
+    <string name="button_dot">.</string>
+    <string name="button_equals">=</string>
+    <string name="button_clear">C</string>
+    <string name="button_delete">DEL</string>
+    <string name="button_plus">+</string>
+    <string name="button_minus">-</string>
+    <string name="button_multiply">×</string>
+    <string name="button_divide">÷</string>
+    <string name="button_power">^</string>
+    <string name="button_mod">MOD</string>
+    <string name="button_open_bracket">(</string>
+    <string name="button_close_bracket">)</string>
+    <string name="button_plus_minus">+/-</string>
+
+    <string name="title_num_sys_converter">Конвертер Систем Счисления</string>
+    <string name="hint_from_base">Изначальная система счисления(2-36)</string>
+    <string name="hint_to_base">Конечная система счисления(2-36)</string>
+    <string name="label_input">Input:</string>
+    <string name="label_result">Result:</string>
+    <string name="button_A">A</string>
+    <string name="button_B">B</string>
+    <string name="button_C">C</string>
+    <string name="button_D">D</string>
+    <string name="button_E">E</string>
+    <string name="button_F">F</string>
+    <string name="not_supported">Операция не поддерживается в преобразователе систем счисления.</string>
+    <string name="not_supported_decimal">Десятичные точки не поддерживаются при преобразовании систем счисления.</string>
+
+    <string name="error_invalid_input">Недопустимый ввод</string>
+    <string name="error_missing_base">Пожалуйста, введите \'Из системы\' и \'В систему\'.</string>
+    <string name="error_invalid_base">Основание должно быть от 2 до 36.</string>
+    <string name="error_base_range">Недопустимая система счисления (от 2 до 36)</string>
+    <string name="error_invalid_char_for_base">Недопустимый символ для указанной системы счисления %d</string>
+    <string name="error_invalid_input_too_large">Введенное число слишком велико для конвертации</string>
+    <string name="error_operation_not_supported">Операция не поддерживается в этом режиме</string>
+
+    <string name="action_switch_to_standard_calc">Переключиться на стандартный калькулятор</string>
+
+    <string name="title_standard_calculator">Стандартный калькулятор</string>
+    <string name="action_switch_to_num_sys_converter">Переключиться на конвертер систем счисления</string>
+    <string name="error_invalid_result">Недопустимый результат</string>
+    <string name="error_invalid_expression">Недопустимое выражение</string>
+    <string name="error_division_by_zero">Деление на ноль</string>
+    <string name="error_generic_eval_error">Ошибка вычисления</string>
+    <string name="error_generic">Произошла ошибка</string>
 
     <string name="button_ac">AC</string>
     <string name="button_backspace">⌫</string>
     <string name="button_percent">%</string>
-    <string name="button_divide">/</string>
-    <string name="button_7">7</string>
-    <string name="button_8">8</string>
-    <string name="button_9">9</string>
-    <string name="button_multiply">×</string>
-    <string name="button_4">4</string>
-    <string name="button_5">5</string>
-    <string name="button_6">6</string>
-    <string name="button_minus">-</string>
-    <string name="button_1">1</string>
-    <string name="button_2">2</string>
-    <string name="button_3">3</string>
-    <string name="button_plus">+</string>
-    <string name="button_0">0</string>
-    <string name="button_dot">.</string>
-    <string name="button_equals">=</string>
-    <string name="action_switch_to_standard_calc">Перейти в обычный калькулятор</string>
-
-    <string name="title_standard_calculator">Обычный калькулятор</string>
-    <string name="button_clear">C</string>
-    <string name="button_plus_minus">±</string>
-    <string name="button_open_bracket">(</string>
-    <string name="button_close_bracket">)</string>
-    <string name="button_power">^</string>
-    <string name="action_switch_to_num_sys_converter">Перейти в конвертер систем</string>
-
-    <string name="error_base_range">Основание от 2 до 36</string>
-    <string name="error_invalid_char_for_base">Недопустимый символ для основания</string>
-    <string name="error_invalid_input">Некорректный ввод</string>
-    <string name="error_division_by_zero">Ошибка: деление на ноль</string>
-    <string name="error_generic">Ошибка</string>
-
-    <string name="error_script_engine_not_found">Ошибка: движок для вычислений не найден</string>
-    <string name="error_invalid_result">Ошибка: некорректный результат</string>
-    <string name="error_invalid_expression">Ошибка: некорректное выражение</string>
-    <string name="error_generic_eval_error">Ошибка вычисления</string>
+    <string name="default_from_base">10</string>
+    <string name="default_to_base">2</string>
+    <string name="button_open_paren">(</string>
+    <string name="button_close_paren">)</string>
 
 </resources>
